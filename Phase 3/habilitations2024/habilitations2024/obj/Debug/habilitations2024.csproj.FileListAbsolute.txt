@@ -7,3 +7,14 @@ C:\Users\enzog\Downloads\habilitations2024-30cbfabf8002533fd00ed84e9b5e37af445a1
 C:\Users\enzog\Downloads\habilitations2024-30cbfabf8002533fd00ed84e9b5e37af445a135d\habilitations2024-30cbfabf8002533fd00ed84e9b5e37af445a135d\habilitations2024\obj\Debug\habilitations2024.csproj.CoreCompileInputs.cache
 C:\Users\enzog\Downloads\habilitations2024-30cbfabf8002533fd00ed84e9b5e37af445a135d\habilitations2024-30cbfabf8002533fd00ed84e9b5e37af445a135d\habilitations2024\obj\Debug\habilitations2024.exe
 C:\Users\enzog\Downloads\habilitations2024-30cbfabf8002533fd00ed84e9b5e37af445a135d\habilitations2024-30cbfabf8002533fd00ed84e9b5e37af445a135d\habilitations2024\obj\Debug\habilitations2024.pdb
+C:\Users\enzog\Downloads\Phase 3\habilitations2024\habilitations2024\bin\Debug\habilitations2024.exe.config
+C:\Users\enzog\Downloads\Phase 3\habilitations2024\habilitations2024\bin\Debug\habilitations2024.exe
+C:\Users\enzog\Downloads\Phase 3\habilitations2024\habilitations2024\bin\Debug\habilitations2024.pdb
+C:\Users\enzog\Downloads\Phase 3\habilitations2024\habilitations2024\obj\Debug\habilitations2024.csproj.AssemblyReference.cache
+C:\Users\enzog\Downloads\Phase 3\habilitations2024\habilitations2024\obj\Debug\habilitations2024.exe.config
+C:\Users\enzog\Downloads\Phase 3\habilitations2024\habilitations2024\obj\Debug\habilitations2024.Properties.Resources.resources
+C:\Users\enzog\Downloads\Phase 3\habilitations2024\habilitations2024\obj\Debug\habilitations2024.view.FrmHabilitations.resources
+C:\Users\enzog\Downloads\Phase 3\habilitations2024\habilitations2024\obj\Debug\habilitations2024.csproj.GenerateResource.cache
+C:\Users\enzog\Downloads\Phase 3\habilitations2024\habilitations2024\obj\Debug\habilitations2024.csproj.CoreCompileInputs.cache
+C:\Users\enzog\Downloads\Phase 3\habilitations2024\habilitations2024\obj\Debug\habilitations2024.exe
+C:\Users\enzog\Downloads\Phase 3\habilitations2024\habilitations2024\obj\Debug\habilitations2024.pdb

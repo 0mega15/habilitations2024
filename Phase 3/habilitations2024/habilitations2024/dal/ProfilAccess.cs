@@ -29,7 +29,7 @@ namespace habilitations2024.dal
         /// Récupère et retourne les profils
         /// </summary>
         /// <returns>liste des profils</returns>
-        public List<Profil> GetLesProfils()
+        public List<Profil> GetLesProfils(string typecbo)
         {
             List<Profil> lesProfils = new List<Profil>();
             if (access.Manager != null)
@@ -40,11 +40,18 @@ namespace habilitations2024.dal
                     List<Object[]> records = access.Manager.ReqSelect(req);
                     if (records != null)
                     {
+                        if (typecbo == "filtre")
+                        {
+                            // Ajout d'un profil vide pour la liste déroulante
+                            Profil empty = new Profil((int)0, string.Empty);
+                            lesProfils.Add(empty);
+                        }
                         foreach (Object[] record in records)
                         {
                             Profil profil = new Profil((int)record[0], (string)record[1]);
                             lesProfils.Add(profil);
                         }
+                        
                     }
                 }
                 catch (Exception e)

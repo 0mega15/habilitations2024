@@ -1,9 +1,12 @@
-﻿using habilitations2024.model;
+﻿using habilitations2024.controller;
+using habilitations2024.model;
+using habilitations2024.view;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace habilitations2024.dal
 {
@@ -63,14 +66,29 @@ namespace habilitations2024.dal
         /// Récupère et retourne les développeurs
         /// </summary>
         /// <returns>liste des développeurs</returns>
-        public List<Developpeur> GetLesDeveloppeurs()
+        public List<Developpeur> GetLesDeveloppeurs(string profilselected)
         {
             List<Developpeur> lesDeveloppeurs = new List<Developpeur>();
             if (access.Manager != null)
             {
-                string req = "select d.iddeveloppeur as iddeveloppeur, d.nom as nom, d.prenom as prenom, d.tel as tel, d.mail as mail, p.idprofil as idprofil, p.nom as profil ";
-                req += "from developpeur d join profil p on (d.idprofil = p.idprofil) ";
-                req += "order by nom, prenom;";
+                string req = string.Empty;
+                string reqtest = string.Empty;
+
+                if (profilselected == "" || profilselected == null)
+                {
+                    req += "select d.iddeveloppeur as iddeveloppeur, d.nom as nom, d.prenom as prenom, d.tel as tel, d.mail as mail, p.idprofil as idprofil, p.nom as profil ";
+                    req += "from developpeur d join profil p on (d.idprofil = p.idprofil) ";
+                    req += "order by nom, prenom;";
+                }
+                else
+                {
+                    req += "select d.iddeveloppeur as iddeveloppeur, d.nom as nom, d.prenom as prenom, d.tel as tel, d.mail as mail, p.idprofil as idprofil, p.nom as profil ";
+                    req += "from developpeur d join profil p on (d.idprofil = p.idprofil) ";
+                    req += $"where p.nom = '{profilselected}' ";
+                    req += "order by nom, prenom;";
+                }
+                
+
                 try
                 {
                     List<Object[]> records = access.Manager.ReqSelect(req);
@@ -83,6 +101,7 @@ namespace habilitations2024.dal
                                 (string)record[3], (string)record[4], profil);
                             lesDeveloppeurs.Add(developpeur);
                         }
+                        
                     }
                 }
                 catch (Exception e)

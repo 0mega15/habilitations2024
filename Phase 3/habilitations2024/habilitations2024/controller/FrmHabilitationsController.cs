@@ -35,18 +35,18 @@ namespace habilitations2024.controller
         /// Récupère et retourne les infos des développeurs
         /// </summary>
         /// <returns>liste des développeurs</returns>
-        public List<Developpeur> GetLesDeveloppeurs()
+        public List<Developpeur> GetLesDeveloppeurs(string profil)
         {
-            return developpeurAccess.GetLesDeveloppeurs();
+            return developpeurAccess.GetLesDeveloppeurs(profil);
         }
 
         /// <summary>
         /// Récupère et retourne les infos des profils
         /// </summary>
         /// <returns>liste des profils</returns>
-        public List<Profil> GetLesProfils()
+        public List<Profil> GetLesProfils(string typecbo)
         {
-            return profilAccess.GetLesProfils();
+            return profilAccess.GetLesProfils(typecbo);
         }
 
         /// <summary>
@@ -85,5 +85,6 @@ namespace habilitations2024.controller
             developpeurAccess.UpdatePwd(developpeur);
         }
 
+        
     }
 }
